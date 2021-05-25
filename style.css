@@ -1,0 +1,84 @@
+:root {
+    --bg-button: #ff77e8;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.judul h1 {
+    text-align: center;
+}
+
+.container-input {
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0 1px 4px 0 rgba(1, 1, 1, 0.1);
+}
+
+.btn-kirim {
+    background-color: var(--bg-button);
+    border: 1px solid transparent;
+    border-radius: 50px;
+    padding: 1% 5%;
+    font-size: 18px;
+}
+
+.btn-kirim:hover {
+    background-color: #fff;
+    color: var(--bg-button);
+    border: 1px solid var(--bg-button);
+
+}
+
+.btn-kirim.focus,
+.btn-kirim:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: 0;
+    background-color: var(--bg-button);
+    color: #fff;
+    border: 1px solid transparent;
+}
+
+.container-output {
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 0 1px 4px 0 rgba(1, 1, 1, 0.1);
+}
+
+.tanggal {
+    color: rgba(1, 1, 1, 0.5);
+}
+
+.container-output {
+    border-radius: 20px;
+    /* width: 80%; */
+    height: 30vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: var(--bg-button);
+}
+
+
+
+
+
+@media (max-width: 600px) {
+
+    .container-input,
+    .container-output {
+        width: 80%;
+    }
+}
